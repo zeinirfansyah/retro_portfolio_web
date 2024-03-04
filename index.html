@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/DKI Jakarta.png" />
+    <title>Zein Irfansyah</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+
+            }
+          }
+        }
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+      @font-face {
+        font-family: "retro_remembers";
+        src: url("assets/fonts/retro_remembers.ttf" );
+      }
+
+      .font-retro {
+        font-family: "retro_remembers";
+      }
+
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+      }
+
+      .text-stroke {
+        -webkit-text-stroke: 1px #4139352b;
+      }
+
+      #img-cube {
+        animation: float 8s ease-in-out infinite;
+        transform-origin: 50% 50%;
+      }
+
+      .paper-drop {
+        box-shadow: 0 12px 14px -8px rgba(0, 0, 0, 0.488), 12px 0px 10px -10px rgba(0, 0, 0, 0.261);
+      }
+
+      /* card */
+      .card {
+        padding: 1rem;
+        margin: 1rem;
+      }
+      /* --- */
+
+      @keyframes float {
+        0% {
+          transform: translatey(0px);
+        }
+        50% {
+          transform: translatey(-20px);
+        }
+        100% {
+          transform: translatey(0px);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="sticky top-0 z-10 bg-[#83B5B4]">
+      <nav
+        class="Navbar lg:flex justify-between items-center px-4 py-7 text-white shadow-md lg:px-28 outline-dashed outline-2 outline-offset-[-4px]"
+      >
+        <ul class="flex items-center justify-between">
+          <li>
+            <a href="" class="Brand flex items-center gap-2 text-[#f0ebd1]">
+              <h1
+                class="text-xl lg:text-3xl font-bold font-retro text-[#f0ebd1] transition-all duration-500 drop-shadow-md lg:drop-shadow-lg"
+              >
+                Zein Irfansyah
+              </h1>
+            </a>
+          </li>
+          <button
+            class="sm:hidden text-[#413935] hover:text-[#413935] bg-[#f0ebd1] hover:bg-white px-3 py-1 transition-all rounded-lg cursor-pointer shadow-md"
+            :
+            onClick="toggleMenu()"
+            type="button"
+          >
+            <span class="text-xl">&#9776;</span>
+          </button>
+        </ul>
+        <ul
+          id="menu"
+          class="lg:flex gap-5 hidden font-playfair font-bold drop-shadow-md lg:drop-shadow-lg transition-all duration-500"
+        >
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#"
+              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
+              >About</a
+            >
+          </li>
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#"
+              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
+              >Experiences</a
+            >
+          </li>
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#"
+              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
+              >Educations</a
+            >
+          </li>
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#"
+              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
+              >Certifications</a
+            >
+          </li>
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#"
+              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
+              >Skills</a
+            >
+          </li>
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#"
+              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
+              >Showcases</a
+            >
+          </li>
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#"
+              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
+              >Kirim Pesan</a
+            >
+          </li>
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#"
+              class="bg-[#f0ebd1] text-[#413935] font-bold hover:text-white hover:bg-transparent px-4 py-2 border-[3px] border-[#f0ebd1] transition-all duration-500 rounded-xl hover:rounded-none hover:drop-shadow-lg"
+              >Download CV</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="bg-[#83B5B4] overflow-hidden  outline-2 outline-offset-[4px] outline-dashed transition-all duration-500">
+        <div
+          class="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-2"
+        >
+          <div class="flex flex-col items-center lg:items-start lg:w-1/2">
+            <h1
+              class="font-playfair text-4xl lg:text-7xl font-bold text-[#f0ebd1] transition-all duration-500 drop-shadow-md text-stroke mt-4"
+            >
+              HAI, MY NAME IS
+            </h1>
+            <h1
+              class="font-playfair text-4xl lg:text-6xl font-bold text-[#413935] transition-all duration-500 drop-shadow-md text-stroke px-2 bg-white"
+            >
+              ZEIN IRFANSYAH
+            </h1>
+
+            <hr class="w-1/2 border-[3px] border-[#f0ebd1] my-4" />
+
+            <h1
+              class="font-playfair text-2xl lg:text-4xl font-bold text-white transition-all duration-500 drop-shadow-md text-stroke text-center"
+            >
+              SOFTWARE ENGINEER
+            </h1>
+          </div>
+          <div class="lg:w-1/2 flex justify-center items-center lg:my-7">
+            <div class="card paper-drop bg-white w-[75%] lg:rotate-3 transition duration-500">
+              <img
+                src="assets/zein_vintage.jpg"
+                alt="Zein Irfansyah"
+                class="outline-2 outline-offset-[4px] outline-dashed"
+              />
+              <div class="desc mt-4 font-playfair">
+                <p>
+                  Hai, I&apos;m Zein Irfansyah, fresh graduate of Informatics
+                  Department, University of Technology Yogyakarta with a GPA of
+                  3.78 and 1 year of intern experience in web development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+        const toggleMenu = () => {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("hidden");
+      };
+    </script>
+  </body>
+</html>
