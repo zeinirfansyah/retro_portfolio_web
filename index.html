@@ -30,6 +30,10 @@
         src: url("assets/fonts/retro_remembers.ttf" );
       }
 
+      .test {
+        color: #00000049;
+      }
+
       .font-retro {
         font-family: "retro_remembers";
       }
@@ -39,12 +43,16 @@
         font-optical-sizing: auto;
       }
 
+      .retro-drop-shadow {
+        filter: drop-shadow(4px 4px 1px #00000049);
+      }
+
       .text-stroke {
         -webkit-text-stroke: 1px #4139352b;
       }
 
-      #img-cube {
-        animation: float 8s ease-in-out infinite;
+      #zein-vintage {
+        animation: float 5s ease-in-out infinite;
         transform-origin: 50% 50%;
       }
 
@@ -64,7 +72,7 @@
           transform: translatey(0px);
         }
         50% {
-          transform: translatey(-20px);
+          transform: translatey(-5px);
         }
         100% {
           transform: translatey(0px);
@@ -167,12 +175,12 @@
         >
           <div class="flex flex-col items-center lg:items-start lg:w-1/2">
             <h1
-              class="font-playfair text-4xl lg:text-7xl font-bold text-[#f0ebd1] transition-all duration-500 drop-shadow-md text-stroke mt-4"
+              class="font-retro text-4xl lg:text-7xl font-bold text-[#f0ebd1] transition-all duration-500 mt-4 retro-drop-shadow"
             >
               HAI, MY NAME IS
             </h1>
             <h1
-              class="font-playfair text-4xl lg:text-6xl font-bold text-[#413935] transition-all duration-500 drop-shadow-md text-stroke px-2 bg-white"
+              class="font-retro text-4xl lg:text-6xl font-bold text-[#413935] transition-all duration-500 mt-4 lg:mt-8 px-2 py-2 bg-white outline-dashed outline-2 outline-offset-[4px] outline-white"
             >
               ZEIN IRFANSYAH
             </h1>
@@ -180,12 +188,12 @@
             <hr class="w-1/2 border-[3px] border-[#f0ebd1] my-4" />
 
             <h1
-              class="font-playfair text-2xl lg:text-4xl font-bold text-white transition-all duration-500 drop-shadow-md text-stroke text-center"
+              class="font-retro text-2xl lg:text-4xl font-bold text-white transition-all duration-500 retro-drop-shadow text-center"
             >
               SOFTWARE ENGINEER
             </h1>
           </div>
-          <div class="lg:w-1/2 flex justify-center items-center lg:my-7">
+          <div id="zein-vintage" class="lg:w-1/2 flex justify-center items-center lg:my-7">
             <div class="card paper-drop bg-white w-[75%] lg:rotate-3 transition duration-500">
               <img
                 src="assets/zein_vintage.jpg"
@@ -194,9 +202,9 @@
               />
               <div class="desc mt-4 font-playfair">
                 <p>
-                  Hai, I&apos;m Zein Irfansyah, fresh graduate of Informatics
-                  Department, University of Technology Yogyakarta with a GPA of
-                  3.78 and 1 year of intern experience in web development.
+                  Hai, I&apos;m <strong>Zein Irfansyah</strong>, fresh graduate of Informatics
+                  Department, University of Technology Yogyakarta with a <strong>GPA of
+                    3.78</strong> and <strong>1 year of intern experience</strong> in web development.
                 </p>
               </div>
             </div>
