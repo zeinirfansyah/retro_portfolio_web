@@ -314,7 +314,7 @@
       </section>
       <section
         id="certificates"
-        class="bg-[#D57F5D] overflow-hidden  outline-2 outline-offset-[4px] outline-dashed outline-black transition-all duration-500"
+        class="bg-[#83B5B4] overflow-hidden  outline-2 outline-offset-[4px] outline-dashed outline-black transition-all duration-500"
         
       >
         <div
@@ -383,7 +383,7 @@
         </div>
       </section>
       <footer
-        class="bg-[#D57F5D] py-7 flex flex-col justify-center items-center outline-2 outline-offset-[4px] outline-dashed"
+        class="bg-[#83B5B4] py-7 flex flex-col justify-center items-center outline-2 outline-offset-[4px] outline-dashed"
         
       >
         <h1
@@ -543,27 +543,33 @@
       };
     </script>
 
-    <script>
-      // Function to update navbar color based on scroll position
-      function updateNavbarColor() {
-        const experiencesEducationsSection = document.getElementById('experiences-educations');
-        const navbar = document.querySelector('header');
+<script>
+  // Function to update navbar color based on scroll position
+  function updateNavbarColor() {
+    const experiencesEducationsSection = document.getElementById('experiences-educations');
+    const projectsSection = document.getElementById('projects');
+    const navbar = document.querySelector('header');
 
-        if (experiencesEducationsSection) {
-          const sectionRect = experiencesEducationsSection.getBoundingClientRect();
+    if (experiencesEducationsSection && projectsSection) {
+      const experiencesRect = experiencesEducationsSection.getBoundingClientRect();
+      const projectsRect = projectsSection.getBoundingClientRect();
 
-          if (sectionRect.top < 0) {
-            navbar.style.transition = 'background-color 0.5s ease';
-            navbar.style.backgroundColor = '#D57F5D';
-          } else {
-
-            navbar.style.transition = 'background-color 0.5s ease';
-            navbar.style.backgroundColor = '#83B5B4';
-          }
-        }
+      if (experiencesRect.top < 0 && experiencesRect.bottom > 0) {
+       
+        navbar.style.transition = 'background-color 0.5s ease';
+        navbar.style.backgroundColor = '#D57F5D'; // 
+      } else if (projectsRect.top < 0 && projectsRect.bottom > 0) {
+        navbar.style.transition = 'background-color 0.5s ease';
+        navbar.style.backgroundColor = '#D57F5D'; // 
+      } else {
+        navbar.style.transition = 'background-color 0.5s ease';
+        navbar.style.backgroundColor = '#83B5B4'; // 
       }
-      window.addEventListener('scroll', updateNavbarColor);
-      updateNavbarColor();
-    </script>
+    }
+  }
+
+  window.addEventListener('scroll', updateNavbarColor);
+  updateNavbarColor();
+</script>
   </body>
 </html>
