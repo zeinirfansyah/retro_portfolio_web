@@ -91,10 +91,7 @@
   </head>
 
   <body>
-    <header
-      class="sticky top-0 z-10 bg-[#83B5B4]"
-      
-    >
+    <header class="sticky top-0 z-10 bg-[#83B5B4]">
       <nav
         class="Navbar lg:flex justify-between items-center px-4 py-7 text-white shadow-md lg:px-28 outline-dashed outline-2 outline-offset-[-4px]"
       >
@@ -171,7 +168,6 @@
       <section
         id="about"
         class="bg-[#83B5B4] overflow-hidden outline-2 outline-offset-[4px] outline-dashed transition-all duration-500 py-7 lg:py-[7rem]"
-        
       >
         <div
           class="lg:px-28 flex flex-col lg:flex-row justify-between items-center gap-2"
@@ -254,14 +250,12 @@
       <section
         id="skills"
         class="bg-[#f0ebd1] overflow-hidden  outline-2 outline-offset-[4px] outline-dashed outline-white transition-all duration-500"
-        
       >
         <div
           class="lg:px-28 flex flex-col justify-center items-center gap-2 my-7"
         >
           <div
             class="flex flex-col items-center bg-[#83B5B4] paper-drop my-4 p-4 outline-2 outline-offset-[4px] outline-dashed"
-            
           >
             <h1
               class="font-retro text-4xl lg:text-5xl font-bold text-[#f0ebd1] transition-all duration-500 retro-drop-shadow mt-7"
@@ -287,7 +281,6 @@
       <section
         id="experiences-educations"
         class="bg-[#f0ebd1] grid grid-cols-1 lg:grid-cols-2 lg:gap-4 overflow-hidden outline-2 outline-offset-[4px] outline-dashed outline-black transition-all duration-500 lg:px-28 lg:py-12"
-        
       >
         <div id="experiences-list" class="flex flex-col">
           <div class="bg-[#D57F5D] px-4 py-2 mt-7 w-fit mx-2 mb-4">
@@ -315,7 +308,6 @@
       <section
         id="certificates"
         class="bg-[#83B5B4] overflow-hidden  outline-2 outline-offset-[4px] outline-dashed outline-black transition-all duration-500"
-        
       >
         <div
           class="lg:px-28 flex flex-col justify-center items-center gap-2 my-7"
@@ -344,14 +336,12 @@
       <section
         id="projects"
         class="bg-[#f0ebd1] overflow-hidden  outline-2 outline-offset-[4px] outline-dashed outline-white transition-all duration-500"
-        
       >
         <div
           class="lg:px-28 flex flex-col justify-center items-center gap-2 my-7"
         >
           <div
             class="flex flex-col items-center bg-[#D57F5D] paper-drop my-4 p-4 outline-2 outline-offset-[4px] outline-dashed"
-            
           >
             <h1
               class="font-retro text-4xl lg:text-5xl font-bold text-[#f0ebd1] transition-all duration-500 retro-drop-shadow mt-7"
@@ -384,7 +374,6 @@
       </section>
       <footer
         class="bg-[#83B5B4] py-7 flex flex-col justify-center items-center outline-2 outline-offset-[4px] outline-dashed"
-        
       >
         <h1
           class="font-retro retro-drop-shadow text-center text-xl text-[#f0ebd1]"
@@ -395,10 +384,7 @@
           This site was created to fulfill an assignment from Harisenin
           Bootcamp. To see my main personal website, please visit the following
           link:
-          <a
-            href="https://zeinirfansyah.me"
-            target="_blank"
-            class="font-bold"
+          <a href="https://zeinirfansyah.me" target="_blank" class="font-bold"
             >https://zeinirfansyah.me</a
           >
         </p>
@@ -543,33 +529,33 @@
       };
     </script>
 
-<script>
-  // Function to update navbar color based on scroll position
-  function updateNavbarColor() {
-    const experiencesEducationsSection = document.getElementById('experiences-educations');
-    const projectsSection = document.getElementById('projects');
-    const navbar = document.querySelector('header');
+    <script>
+      // Function to update navbar color based on scroll position
+      function updateNavbarColor() {
+        const experiencesEducationsSection = document.getElementById('experiences-educations');
+        const projectsSection = document.getElementById('projects');
+        const navbar = document.querySelector('header');
 
-    if (experiencesEducationsSection && projectsSection) {
-      const experiencesRect = experiencesEducationsSection.getBoundingClientRect();
-      const projectsRect = projectsSection.getBoundingClientRect();
+        if (experiencesEducationsSection && projectsSection) {
+          const experiencesRect = experiencesEducationsSection.getBoundingClientRect();
+          const projectsRect = projectsSection.getBoundingClientRect();
 
-      if (experiencesRect.top < 0 && experiencesRect.bottom > 0) {
-       
-        navbar.style.transition = 'background-color 0.5s ease';
-        navbar.style.backgroundColor = '#D57F5D'; // 
-      } else if (projectsRect.top < 0 && projectsRect.bottom > 0) {
-        navbar.style.transition = 'background-color 0.5s ease';
-        navbar.style.backgroundColor = '#D57F5D'; // 
-      } else {
-        navbar.style.transition = 'background-color 0.5s ease';
-        navbar.style.backgroundColor = '#83B5B4'; // 
+          if (experiencesRect.top < 0 && experiencesRect.bottom > 0) {
+
+            navbar.style.transition = 'background-color 0.5s ease';
+            navbar.style.backgroundColor = '#D57F5D'; //
+          } else if (projectsRect.top < 0 && projectsRect.bottom > 0) {
+            navbar.style.transition = 'background-color 0.5s ease';
+            navbar.style.backgroundColor = '#D57F5D'; //
+          } else {
+            navbar.style.transition = 'background-color 0.5s ease';
+            navbar.style.backgroundColor = '#83B5B4'; //
+          }
+        }
       }
-    }
-  }
 
-  window.addEventListener('scroll', updateNavbarColor);
-  updateNavbarColor();
-</script>
+      window.addEventListener('scroll', updateNavbarColor);
+      updateNavbarColor();
+    </script>
   </body>
 </html>
