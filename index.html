@@ -57,7 +57,7 @@
       }
 
       #zein-vintage {
-        animation: float 5s ease-in-out infinite;
+        animation: float 3s ease-in-out infinite;
         transform-origin: 50% 50%;
       }
 
@@ -77,19 +77,23 @@
           transform: translatey(0px);
         }
         50% {
-          transform: translatey(-8px);
+          transform: translatey(-12px);
         }
         100% {
           transform: translatey(0px);
         }
       }
     </style>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
     <header
       class="sticky top-0 z-10 bg-[#83B5B4]"
-      style="background-image: url(assets/swatch/soft-swatch.png);"
+      
     >
       <nav
         class="Navbar lg:flex justify-between items-center px-4 py-7 text-white shadow-md lg:px-28 outline-dashed outline-2 outline-offset-[-4px]"
@@ -119,56 +123,43 @@
         >
           <li class="my-5 lg:my-0 lg:mb-0">
             <a
-              href="#"
+              href="#about"
               class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
               >About</a
             >
           </li>
           <li class="my-5 lg:my-0 lg:mb-0">
             <a
-              href="#"
-              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
-              >Experiences</a
-            >
-          </li>
-          <li class="my-5 lg:my-0 lg:mb-0">
-            <a
-              href="#"
-              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
-              >Educations</a
-            >
-          </li>
-          <li class="my-5 lg:my-0 lg:mb-0">
-            <a
-              href="#"
-              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
-              >Certifications</a
-            >
-          </li>
-          <li class="my-5 lg:my-0 lg:mb-0">
-            <a
-              href="#"
+              href="#skills"
               class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
               >Skills</a
             >
           </li>
           <li class="my-5 lg:my-0 lg:mb-0">
             <a
-              href="#"
+              href="#experiences-educations"
+              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
+              >Experiences & Educations</a
+            >
+          </li>
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#certificates"
+              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
+              >Certifications</a
+            >
+          </li>
+          <li class="my-5 lg:my-0 lg:mb-0">
+            <a
+              href="#projects"
               class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
               >Showcases</a
             >
           </li>
           <li class="my-5 lg:my-0 lg:mb-0">
             <a
-              href="#"
-              class="text-[#f0ebd1] hover:text-[#fff] transition-all duration-500"
-              >Kirim Pesan</a
-            >
-          </li>
-          <li class="my-5 lg:my-0 lg:mb-0">
-            <a
-              href="#"
+              href="assets/CV/ats_cv_zeinirfansyah_english.pdf"
+              download="ats_cv_zeinirfansyah_english.pdf"
               class="bg-[#f0ebd1] text-[#413935] font-bold hover:text-white hover:bg-transparent px-4 py-2 border-[3px] border-[#f0ebd1] transition-all duration-500 hover:rounded-xl hover:drop-shadow-lg"
               >Download CV</a
             >
@@ -178,8 +169,9 @@
     </header>
     <main>
       <section
+        id="about"
         class="bg-[#83B5B4] overflow-hidden outline-2 outline-offset-[4px] outline-dashed transition-all duration-500 py-7 lg:py-[7rem]"
-        style="background-image: url(assets/swatch/soft-swatch.png);"
+        
       >
         <div
           class="lg:px-28 flex flex-col lg:flex-row justify-between items-center gap-2"
@@ -252,8 +244,7 @@
                   "Hai, I&apos;m <strong>Zein Irfansyah</strong>, fresh graduate
                   of Informatics Department, University of Technology Yogyakarta
                   with a <strong>GPA of 3.78</strong> and
-                  <strong>1 year of intern experience</strong> in web
-                  development."
+                  <strong>1 year of experience</strong> in web development."
                 </p>
               </div>
             </div>
@@ -263,14 +254,14 @@
       <section
         id="skills"
         class="bg-[#f0ebd1] overflow-hidden  outline-2 outline-offset-[4px] outline-dashed outline-white transition-all duration-500"
-        style="background-image: url(assets/swatch/soft-swatch.png);"
+        
       >
         <div
           class="lg:px-28 flex flex-col justify-center items-center gap-2 my-7"
         >
           <div
             class="flex flex-col items-center bg-[#83B5B4] paper-drop my-4 p-4 outline-2 outline-offset-[4px] outline-dashed"
-            style="background-image: url(assets/swatch/soft-swatch.png);"
+            
           >
             <h1
               class="font-retro text-4xl lg:text-5xl font-bold text-[#f0ebd1] transition-all duration-500 retro-drop-shadow mt-7"
@@ -294,122 +285,285 @@
         </div>
       </section>
       <section
-      id="experiences-educations"
-      class="bg-[#f0ebd1] grid grid-cols-1 lg:grid-cols-2 lg:gap-4 overflow-hidden outline-2 outline-offset-[4px] outline-dashed outline-black transition-all duration-500 lg:px-28"
-      style="background-image: url(assets/swatch/soft-swatch.png);"
-    >
-      <div id="experiences-list" class="flex flex-col">
-       <div class="bg-[#D57F5D] px-4 py-2 mt-7 w-fit mx-2 mb-4">
-        <h1
-        class="font-retro text-4xl lg:text-5xl font-bold text-[#fff] transition-all duration-500 drop-shadow"
+        id="experiences-educations"
+        class="bg-[#f0ebd1] grid grid-cols-1 lg:grid-cols-2 lg:gap-4 overflow-hidden outline-2 outline-offset-[4px] outline-dashed outline-black transition-all duration-500 lg:px-28 lg:py-12"
+        
       >
-        Experiences
-      </h1>
-       </div>
-      
-        <!-- Content will be dynamically added here by the script -->
-      </div>
-      <div id="educations-list" class="flex flex-col cols">
-       <div class="bg-[#D57F5D]  px-4 py-2 mt-7 w-fit mx-2 mb-4">
-        <h1
-        class="font-retro text-4xl lg:text-5xl font-bold text-[#fff] transition-all duration-500 drop-shadow"
+        <div id="experiences-list" class="flex flex-col">
+          <div class="bg-[#D57F5D] px-4 py-2 mt-7 w-fit mx-2 mb-4">
+            <h1
+              class="font-retro text-4xl lg:text-5xl font-bold text-[#fff] transition-all duration-500 drop-shadow"
+            >
+              Experiences
+            </h1>
+          </div>
+
+          <!-- Content will be dynamically added here by the script -->
+        </div>
+        <div id="educations-list" class="flex flex-col cols">
+          <div class="bg-[#D57F5D]  px-4 py-2 mt-7 w-fit mx-2 mb-4">
+            <h1
+              class="font-retro text-4xl lg:text-5xl font-bold text-[#fff] transition-all duration-500 drop-shadow"
+            >
+              Education
+            </h1>
+          </div>
+
+          <!-- Content will be dynamically added here by the script -->
+        </div>
+      </section>
+      <section
+        id="certificates"
+        class="bg-[#D57F5D] overflow-hidden  outline-2 outline-offset-[4px] outline-dashed outline-black transition-all duration-500"
+        
+      >
+        <div
+          class="lg:px-28 flex flex-col justify-center items-center gap-2 my-7"
         >
-          Education
+          <h1
+            class="font-retro text-4xl lg:text-5xl font-bold text-[#f0ebd1] transition-all duration-500 retro-drop-shadow mt-7"
+          >
+            certificates
+          </h1>
+          <hr class="w-1/2 border-[3px] border-[#f0ebd1] my-4" />
+          <div
+            id="certificates-list"
+            class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4"
+          >
+            <!-- content certificates -->
+          </div>
+          <div
+            id="certificates-list"
+            class="grid grid-cols-1 lg:grid-cols-4 lg:gap-4 mt-3"
+          >
+            <!-- content softcertificates -->
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="bg-[#f0ebd1] overflow-hidden  outline-2 outline-offset-[4px] outline-dashed outline-white transition-all duration-500"
+        
+      >
+        <div
+          class="lg:px-28 flex flex-col justify-center items-center gap-2 my-7"
+        >
+          <div
+            class="flex flex-col items-center bg-[#D57F5D] paper-drop my-4 p-4 outline-2 outline-offset-[4px] outline-dashed"
+            
+          >
+            <h1
+              class="font-retro text-4xl lg:text-5xl font-bold text-[#f0ebd1] transition-all duration-500 retro-drop-shadow mt-7"
+            >
+              PROJECTS
+            </h1>
+            <hr class="w-1/2 border-[3px] border-[#f0ebd1] my-4" />
+            <div
+              id="projects-list"
+              class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4"
+            >
+              <!-- content projects -->
+            </div>
+            <div
+              id="softprojects-list"
+              class="grid grid-cols-1 lg:grid-cols-4 lg:gap-4 mt-3"
+            >
+              <!-- content softprojects -->
+            </div>
+            <div class="flex">
+              <a
+                href="https://github.com/zeinirfansyah?tab=repositories"
+                target="_blank"
+                class="bg-[#f0ebd1] text-[#413935] font-bold hover:text-white hover:bg-transparent px-4 py-2 border-[3px] border-[#f0ebd1] transition-all duration-500 hover:rounded-xl hover:drop-shadow-lg outline-2 outline-offset-[4px] outline-dashed outline-white"
+                >See More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="bg-[#D57F5D] py-7 flex flex-col justify-center items-center outline-2 outline-offset-[4px] outline-dashed"
+        
+      >
+        <h1
+          class="font-retro retro-drop-shadow text-center text-xl text-[#f0ebd1]"
+        >
+          Zein Irfansyah - 2024
         </h1>
-       </div>
-       
-        <!-- Content will be dynamically added here by the script -->
-      </div>
-    </section>
+        <p class="text-[#f0ebd1] font-bold mt-4 text-center">
+          This site was created to fulfill an assignment from Harisenin
+          Bootcamp. To see my main personal website, please visit the following
+          link:
+          <a
+            href="https://zeinirfansyah.me"
+            target="_blank"
+            class="font-bold"
+            >https://zeinirfansyah.me</a
+          >
+        </p>
+      </footer>
     </main>
 
     <script>
-        const toggleMenu = () => {
+      AOS.init();
+
+      const toggleMenu = () => {
         const menu = document.getElementById("menu");
         menu.classList.toggle("hidden");
       };
-    </script>
-    <script>
-      // Fetch data from JSON file
-      async function fetchData() {
-        try {
-          // Replace 'data.json' with the path to your JSON file or use a variable array
-          const response = await fetch('data.json');
-          const data = await response.json();
-          return data;
-        } catch (error) {
-          console.error('Error fetching data:', error);
-        }
-      }
 
-      // Render content based on the provided data
-      async function renderContentSkills(containerId, dataKey) {
+      // Smooth scroll behavior when clicking on navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetElement = document.querySelector(this.getAttribute('href'));
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
+
+    <script>
+          // Fetch data from JSON file
+          async function fetchData() {
+            try {
+              // Replace 'data.json' with the path to your JSON file or use a variable array
+              const response = await fetch('data.json');
+              const data = await response.json();
+              return data;
+            } catch (error) {
+              console.error('Error fetching data:', error);
+            }
+          }
+
+          async function renderContentSkills(containerId, dataKey) {
+            const container = document.getElementById(containerId);
+            const data = await fetchData();
+
+            if (container && data && data[dataKey]) {
+              data[dataKey].forEach((item) => {
+                const card = document.createElement('div');
+                card.setAttribute('data-aos', 'flip-up');
+                card.setAttribute('data-aos-duration', '500');
+                card.setAttribute('data-aos-delay', '100');
+                card.setAttribute('data-aos-anchor-placement', 'bottom-bottom');
+                card.className = 'card paper-drop bg-[#f0ebd1] lg:hover:rotate-[-1deg] transition duration-500 lg:px-4 py-6 outline-2 outline-offset-[4px] outline-dashed outline-white transition-all duration-500';
+
+                const desc = document.createElement('div');
+                desc.className = 'desc flex flex-col';
+
+                const title = document.createElement('h1');
+                title.className = 'text-xl font-bold text-start';
+                title.textContent = item.title;
+
+                const subtitle = document.createElement('h2');
+                subtitle.className = 'text-xl';
+                subtitle.textContent = item.subtitle;
+
+                const paragraph = document.createElement('p');
+                paragraph.className = 'text-start';
+                paragraph.textContent = item.description;
+
+                const tech = document.createElement('p');
+
+                if (item.tech !== undefined && item.tech.trim() !== "") {
+                  tech.className = 'text-start';
+                tech.textContent = 'Tech stack: ' + item.tech;
+                }
+
+                const url = document.createElement('a');
+                  url.target = '_blank';
+
+                  if (item.url !== undefined && item.url.trim() !== "") {
+                    url.href = item.url;
+                    url.textContent = 'Open';
+                    url.className = 'text-xl font-bold text-[#4d4d4d] transition-all duration-500 px-4 border-2 border-[#4d4d4d] hover:border-[#df2e2e] hover:text-[#df2e2e]  mt-2 w-fit';
+                  } else {
+                    url.href = '';
+                  }
+
+                desc.appendChild(title);
+                desc.appendChild(subtitle);
+                desc.appendChild(paragraph);
+                desc.appendChild(tech);
+                card.appendChild(desc);
+                desc.appendChild(url);
+                container.appendChild(card);
+              });
+            }
+          }
+
+      async function renderContentExperiencesEducations(containerId, dataKey) {
         const container = document.getElementById(containerId);
         const data = await fetchData();
 
         if (container && data && data[dataKey]) {
           data[dataKey].forEach((item) => {
-            const card = document.createElement('div');
-            card.className = 'card paper-drop bg-[#f0ebd1] lg:rotate-[-1deg] lg:hover:rotate-0 transition duration-500 lg:px-4 py-6 outline-2 outline-offset-[-4px] outline-dashed transition-all duration-500';
-
-            const desc = document.createElement('div');
-            desc.className = 'desc flex flex-col';
+            const div = document.createElement('div');
+            // div.className = 'flex flex-col gap-1 my-3 pl-3 border-l-4 border-[#83B5B4]';
+            div.className = 'bg-[#f0ebd1] px-4 mx-2 my-3 lg:hover:rotate-[-1deg] transition duration-500 border-l-4 border-[#D57F5D] transition-all duration-500'
+            div.setAttribute('data-aos', 'fade-up');
+            div.setAttribute('data-aos-duration', '1000');
+            div.setAttribute('data-aos-delay', '200');
+            div.setAttribute('data-aos-anchor-placement', 'bottom-bottom');
 
             const title = document.createElement('h1');
-            title.className = 'text-xl font-bold text-start';
+            title.className = 'text-2xl font-bold';
             title.textContent = item.title;
 
+            const subtitle = document.createElement('h2');
+            subtitle.className = 'text-xl';
+            subtitle.textContent = item.subtitle;
+
             const paragraph = document.createElement('p');
-            paragraph.className = 'text-start';
+            paragraph.className = 'text-l';
             paragraph.textContent = item.description;
 
-            desc.appendChild(title);
-            desc.appendChild(paragraph);
-            card.appendChild(desc);
-            container.appendChild(card);
+            div.appendChild(title);
+            div.appendChild(subtitle);
+            div.appendChild(paragraph);
+            container.appendChild(div);
           });
         }
       }
 
-      // Render content based on the provided data for Experiences and Educations
-  async function renderContentExperiencesEducations(containerId, dataKey) {
-    const container = document.getElementById(containerId);
-    const data = await fetchData();
-
-    if (container && data && data[dataKey]) {
-      data[dataKey].forEach((item) => {
-        const div = document.createElement('div');
-        // div.className = 'flex flex-col gap-1 my-3 pl-3 border-l-4 border-[#D57F5D]';
-        div.className = 'bg-[#f0ebd1] px-4 mx-2 my-3 lg:hover:rotate-[-1deg] transition duration-500 border-l-4 border-[#D57F5D] transition-all duration-500'
-
-        const title = document.createElement('h1');
-        title.className = 'text-2xl font-bold';
-        title.textContent = item.title;
-
-        const subtitle = document.createElement('h2');
-        subtitle.className = 'text-xl';
-        subtitle.textContent = item.subtitle;
-
-        const paragraph = document.createElement('p');
-        paragraph.className = 'text-l';
-        paragraph.textContent = item.description;
-
-        div.appendChild(title);
-        div.appendChild(subtitle);
-        div.appendChild(paragraph);
-        container.appendChild(div);
-      });
-    }
-  }
-
-      // Call the render function for skills and softskills when the page loads
       window.onload = function () {
         renderContentSkills('skills-list', 'skills');
         renderContentSkills('softskills-list', 'softskills');
         renderContentExperiencesEducations('experiences-list', 'experiences');
-    renderContentExperiencesEducations('educations-list', 'educations');
-
+        renderContentExperiencesEducations('educations-list', 'educations');
+        renderContentSkills('certificates-list', 'certificates');
+        renderContentSkills('projects-list', 'projects');
       };
+    </script>
+
+    <script>
+      // Function to update navbar color based on scroll position
+      function updateNavbarColor() {
+        const experiencesEducationsSection = document.getElementById('experiences-educations');
+        const navbar = document.querySelector('header');
+
+        if (experiencesEducationsSection) {
+          const sectionRect = experiencesEducationsSection.getBoundingClientRect();
+
+          if (sectionRect.top < 0) {
+            navbar.style.transition = 'background-color 0.5s ease';
+            navbar.style.backgroundColor = '#D57F5D';
+          } else {
+
+            navbar.style.transition = 'background-color 0.5s ease';
+            navbar.style.backgroundColor = '#83B5B4';
+          }
+        }
+      }
+      window.addEventListener('scroll', updateNavbarColor);
+      updateNavbarColor();
     </script>
   </body>
 </html>
