@@ -1,38 +1,78 @@
 {
     "skills": [
-        {
-          "title": "Web Development",
-          "description": "Proficient in developing and implementing REST API in web applications using React JS, Laravel, and Express JS."
-        },
-        {
-            "title": "Database Management",
-            "description": "Able to design and build SQL or NoSQL databases using MySQL, PostgreSQL, and Firebase."
-        },
-        {
-            "title": "REST API Implementation",
-            "description": "Capable of integrating REST API into web applications."
-        },
-        {
-            "title": "User Interface Design",
-            "description": "Proficient in creating and implementing user interface designs using Figma."
-        }
+      {
+        "title": "Web Development",
+        "description": "Proficient in developing and implementing REST API in web applications using React JS, Laravel, and Express JS."
+      },
+      {
+        "title": "Database Management",
+        "description": "Able to design and build SQL or NoSQL databases using MySQL, PostgreSQL, and Firebase."
+      },
+      {
+        "title": "REST API Implementation",
+        "description": "Capable of integrating REST API into web applications."
+      },
+      {
+        "title": "User Interface Design",
+        "description": "Proficient in creating and implementing user interface designs using Figma."
+      }
     ],
     "softskills": [
-        {
-            "title": "Problem-Solving",
-            "description": "Adept at identifying effective solutions to challenges and obstacles."
-        },
-        {
-            "title": "Teamwork",
-            "description": "Able to work in a team and work independently."
-        },
-        {
-            "title": "Analytical Thinking",
-            "description": "Proficient in the analysis of information and the resolution of complex problems."
-        },
-        {
-            "title": "Creative",
-            "description": "Valued for creative thinking and innovative problem-solving abilities."
-        }
+      {
+        "title": "Problem-Solving",
+        "description": "Adept at identifying effective solutions to challenges and obstacles."
+      },
+      {
+        "title": "Teamwork",
+        "description": "Able to work in a team and work independently."
+      },
+      {
+        "title": "Analytical Thinking",
+        "description": "Proficient in the analysis of information and the resolution of complex problems."
+      },
+      {
+        "title": "Creative",
+        "description": "Valued for creative thinking and innovative problem-solving abilities."
+      }
+    ],
+    "experiences": [
+      {
+        "title": "Web Developer",
+        "subtitle": "Freelance | October 2023 - Now",
+        "description": "Building a web-based application based on client requests."
+      },
+      {
+        "title": "Project-Based Intern: Frontend VIX Core Initiative",
+        "subtitle": "Core Initiative | April 2023 - May 2023",
+        "description": "Implementing the design into web programming code using Vue.js, conducting unit testing using Jest, and learning the fundamentals of CI/CD."
+      },
+      {
+        "title": "Web Developer Internship",
+        "subtitle": "SMK Daarul Abroor Tasikmalaya | April 2022 - March 2023",
+        "description": "Building and developing a web-based library information system using PHP and MySQL."
+      },
+      {
+        "title": "Comitee of KSPM Goes to School Program",
+        "subtitle": "Kelompok Studi Pasar Modal UTY | March 2022 - April 2022",
+        "description": "Creating a poster design for the 'Goes to School' event, developing a concept for virtual Zoom backgrounds, and designing banners and certificates for the 'Goes to School' activity."
+      }
+    ],
+    "educations": [
+      {
+        "title": "Harisenin.com",
+        "subtitle": "Fullstack Development Bootcamp | February 2024 - Now",
+        "description": "Learn how to develop a fullstack web application and work together as a team to develop the project."
+      },
+      {
+        "title": "Synrgy Academy",
+        "subtitle": "Mobile App Development Bootcamp | September 2022 - December 2022 (DO)",
+        "description": "Learn how to develop android-based mobile applications using Kotlin."
+      },
+      {
+        "title": "Universitas Teknologi Yogyakarta",
+        "subtitle": "Bachelor's degree, Informatics | September 2019 - October 2023",
+        "description": "GPA of 3.78"
+      }
     ]
-}
+  }
+  
