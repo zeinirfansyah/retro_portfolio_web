@@ -143,8 +143,14 @@
     }
   ],
 
-  
   "projects" : [
+    {
+      "title": "Sistem Informasi Berbasis Web Dinas Pendidikan dan Kebudayaan Kabupaten Natuna",
+      "subtitle": "On Going",
+      "description": "Sistem untuk upload dan manajemen dokumen dinas pendidikan dan kebudayaan kabupaten natuna.",
+      "tech": "Laravel, Bootstrap",
+      "url": "https://perencanaandisdiknatuna.creonexa.site/"
+    },
     {
       "title": "Gemini API Implementation to Discord Bot",
       "subtitle": "Unknown Date",
@@ -153,10 +159,17 @@
       "url": "https://github.com/zeinirfansyah/discord_ai"
     },
     {
-      "title": "Web Based Library Information System",
+      "title": "Portfolio Website 2023",
+      "subtitle": "2023",
+      "description": "Personal web for branding and portfolio.",
+      "tech": "React Js, Bootstrap",
+      "url": "https://zeinirfansyah.me/"
+    },
+    {
+      "title": "Sistem Informasi Manajemen Inventori Perpustakaan",
       "subtitle": "April 2022 - November 2022",
       "description": "Web-based library information system based on PHP and MySQL.",
-      "tech": "Bootstrap, PHP & MySQL",
+      "tech": "Bootstrap, PHP,  MySQL",
       "url": "https://siperpus.creonexa.site/petugas.php"
     },
     {

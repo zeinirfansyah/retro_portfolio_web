@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+  font-family: "retro_remembers";
+  src: url("assets/fonts/retro_remembers.ttf" );
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+/* test warna aja (gak dipake di proyek) */
+.test_warna {
+  color: #f18154;
+}
+/* --- */
+
+.font-retro {
+  font-family: "retro_remembers";
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+.retro-drop-shadow {
+  filter: drop-shadow(4px 4px 1px #00000049);
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px #4139352b;
+}
+
+#zein-vintage {
+  animation: float 3s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+
+.paper-drop {
+  box-shadow: 0 12px 14px -8px rgba(0, 0, 0, 0.488), 12px 0px 10px -10px rgba(0, 0, 0, 0.261);
+}
+
+/* card */
+.card {
+  padding: 1rem;
+  margin: 1rem;
+}
+/* --- */
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-12px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
